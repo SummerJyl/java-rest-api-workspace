@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Java with Gson",
+      "type": "shell",
+      "command": "javac",
+      "args": ["-cp", ".:gson-2.13.1.jar", "Main.java"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Run Java with Gson",
+      "type": "shell",
+      "command": "java",
+      "args": ["-cp", ".:gson-2.13.1.jar", "Main"],
+      "group": "test",
+      "dependsOn": "Compile Java with Gson"
+    }
+  ]
+}

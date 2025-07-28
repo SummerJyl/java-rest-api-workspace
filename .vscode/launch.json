@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug Main with Gson",
+      "request": "launch",
+      "mainClass": "Main",
+      "classPaths": ["${workspaceFolder}", "${workspaceFolder}/gson-2.13.1.jar"],
+      "console": "integratedTerminal",
+      "args": [],
+      "vmArgs": []
+    }
+  ]
+}
